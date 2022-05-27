@@ -9,6 +9,7 @@ class Title extends Phaser.Scene {
 
         // load JSON (dialog)
         this.load.json('dialog', 'json/dialog.json');
+        this.load.json('mine', 'json/mine.json');
 
         // load images
         this.load.image('dialogbox', 'img/dialogbox.png');

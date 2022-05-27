@@ -1,0 +1,33 @@
+[
+	[
+		{
+			"speaker" : "jove",
+			"dialog" : "I am the extra.",
+			"newSpeaker" : "true"
+		},
+		{
+			"speaker" : "jove",
+			"dialog" : "After this will be different entry."
+		}
+
+	],
+
+	[
+		{
+			"speaker" : "neptune",
+			"dialog" : "Hello world.",
+			"newSpeaker" : "true"
+		},
+		{
+			"speaker" : "homer",
+			"dialog" : "Odyssey almost over",
+			"newSpeaker" : "true"
+		},
+		{	
+			"speaker" : "minerva",
+			"dialog" : "After this dialog, we will head to Machbeth",
+			"newSpeaker" : "true"
+		}
+	]
+	
+]
