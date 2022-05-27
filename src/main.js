@@ -15,7 +15,7 @@ let config = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
-    scene: [ Title, Talking ]
+    scene: [ Title, Machbeth, Talking ]
 };
 
 const game = new Phaser.Game(config);

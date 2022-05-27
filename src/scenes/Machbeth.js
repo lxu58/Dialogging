@@ -1,6 +1,6 @@
-class Talking extends Phaser.Scene {
+class Machbeth extends Phaser.Scene {
     constructor() {
-        super("talkingScene");
+        super("Machbeth");
 
         // dialog constants
         this.DBOX_X = 0;			    // dialog box x-position
@@ -111,7 +111,6 @@ class Talking extends Phaser.Scene {
             }
             // make text box invisible
             this.dialogbox.visible = false;
-            this.scene.start("Machbeth");
 
         } else {
             // if not, set current speaker
