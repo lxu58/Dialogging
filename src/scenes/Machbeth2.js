@@ -1,6 +1,6 @@
-class Machbeth extends Phaser.Scene {
+class Machbeth2 extends Phaser.Scene {
     constructor() {
-        super("Machbeth");
+        super("Machbeth2");
 
         // dialog constants
         this.DBOX_X = 0;			    // dialog box x-position
@@ -38,11 +38,16 @@ class Machbeth extends Phaser.Scene {
 
     create() {
         // parse dialog from JSON file
-        this.dialog = this.cache.json.get('mine');
+        this.dialog = this.cache.json.get('mine2');
         //console.log(this.dialog);
 
+        // add background
+        this.bg = this.add.sprite(0, 0, 'bg').setOrigin(0);
+        
         // add dialog box sprite
         this.dialogbox = this.add.sprite(this.DBOX_X, this.DBOX_Y, 'dialogbox').setOrigin(0);
+
+
 
         // initialize dialog text objects (with no text)
         this.dialogText = this.add.bitmapText(this.TEXT_X, this.TEXT_Y, this.DBOX_FONT, '', this.TEXT_SIZE);
@@ -108,7 +113,6 @@ class Machbeth extends Phaser.Scene {
             }
             // make text box invisible
             this.dialogbox.visible = false;
-            this.scene.start("Machbeth2");
 
         } else {
             // if not, set current speaker

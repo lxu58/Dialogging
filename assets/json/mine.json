@@ -1,33 +1,57 @@
 [
 	[
 		{
-			"speaker" : "jove",
-			"dialog" : "I am the extra.",
+			"speaker" : "Slug",
+			"dialog" : "Hello Macbeth!!!!",
 			"newSpeaker" : "true"
 		},
+
 		{
-			"speaker" : "jove",
-			"dialog" : "After this will be different entry."
+			"speaker" : "Morty",
+			"dialog" : "Wait who the hell are you!!!",
+			"newSpeaker" : "true"
+		},
+
+		{
+			"speaker" : "Slug",
+			"dialog" : "I am Mr.Test, for testing dialog.",
+			"newSpeaker" : "true"
+		},
+
+		{
+			"speaker" : "Slug",
+			"dialog" : "Seems like this assignment is quite useful for the tutorial page for my final game"
+		},
+
+		{
+			"speaker" : "Slug",
+			"dialog" : "so I am doing this just for practice!"
+		},
+
+		{
+			"speaker" : "Morty",
+			"dialog" : "Who are u talking to, and can you say something at least making sense?",
+			"newSpeaker" : "true"
+		},
+
+		{
+			"speaker" : "Slug",
+			"dialog" : "It's okay Slug.Morty, you don't need to understand this.",
+			"newSpeaker" : "true"
+		},
+
+		{
+			"speaker" : "Slug",
+			"dialog" : "You are not designed for understanding the tough things like this after all"
+		},
+
+		{
+			"speaker" : "Morty",
+			"dialog" : "How dare you, fine . What's next",
+			"newSpeaker" : "true"
 		}
 
-	],
 
-	[
-		{
-			"speaker" : "neptune",
-			"dialog" : "Hello world.",
-			"newSpeaker" : "true"
-		},
-		{
-			"speaker" : "homer",
-			"dialog" : "Odyssey almost over",
-			"newSpeaker" : "true"
-		},
-		{	
-			"speaker" : "minerva",
-			"dialog" : "After this dialog, we will head to Machbeth",
-			"newSpeaker" : "true"
-		}
 	]
-	
+
 ]

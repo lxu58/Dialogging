@@ -10,6 +10,7 @@ class Title extends Phaser.Scene {
         // load JSON (dialog)
         this.load.json('dialog', 'json/dialog.json');
         this.load.json('mine', 'json/mine.json');
+        this.load.json('mine2', 'json/mine2.json');
 
         // load images
         this.load.image('dialogbox', 'img/dialogbox.png');
@@ -17,7 +18,9 @@ class Title extends Phaser.Scene {
         this.load.image('minerva', 'img/minerva.png');
         this.load.image('jove', 'img/jove.png');
         this.load.image('neptune', 'img/neptune.png');
-
+        this.load.image('Slug', 'img/slug1.png');
+        this.load.image('Morty', 'img/slug2.png');
+        this.load.image('bg', 'img/game.png')
         // load bitmap font
         this.load.bitmapFont('gem_font', 'font/gem.png', 'font/gem.xml');
     }
@@ -34,6 +37,7 @@ class Title extends Phaser.Scene {
     update() {
         // wait for player input
         if(Phaser.Input.Keyboard.JustDown(cursors.space)) {
+            //this.scene.start("talkingScene");
             this.scene.start("talkingScene");
         }
     }

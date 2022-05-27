@@ -1,0 +1,35 @@
+[
+	[
+
+		{
+			"speaker" : "Morty",
+			"dialog" : "And then what is this?",
+			"newSpeaker" : "true"
+		},
+
+		{
+			"speaker" : "Slug",
+			"dialog" : "My new game, you dumbass!",
+			"newSpeaker" : "true"
+		},
+
+		{
+			"speaker" : "Morty",
+			"dialog" : "What new game?",
+			"newSpeaker" : "true"
+		},
+
+		{
+			"speaker" : "Slug",
+			"dialog" : "You know Morty, if A person knows too much.",
+			"newSpeaker" : "true"
+		},
+
+		{
+			"speaker" : "Slug",
+			"dialog" : "HE MUST DIED!"
+		}
+
+	]
+
+]
