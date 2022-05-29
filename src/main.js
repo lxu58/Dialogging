@@ -9,13 +9,13 @@
 
 // BE STRIK
 "use strict";
-
+//800 * 600
 // game config
 let config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
-    scene: [ Title, Machbeth, Machbeth2, Talking ]
+    width: 1280,
+    height: 720,
+    scene: [Title , Machbeth, Machbeth2, Talking,  ]
 };
 
 const game = new Phaser.Game(config);

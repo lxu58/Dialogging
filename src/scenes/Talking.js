@@ -3,18 +3,18 @@ class Talking extends Phaser.Scene {
         super("talkingScene");
 
         // dialog constants
-        this.DBOX_X = 0;			    // dialog box x-position
-        this.DBOX_Y = 400;			    // dialog box y-position
-        this.DBOX_FONT = 'gem_font';	// dialog box font key
+        this.DBOX_X = 0;			                            // dialog box x-position
+        this.DBOX_Y = game.config.height  - 200 ;			    // dialog box y-position
+        this.DBOX_FONT = 'gem_font';	                        // dialog box font key
 
-        this.TEXT_X = 50;			// text w/in dialog box x-position
-        this.TEXT_Y = 445;			// text w/in dialog box y-position
-        this.TEXT_SIZE = 24;		// text font size (in pixels)
-        this.TEXT_MAX_WIDTH = 715;	// max width of text within box
+        this.TEXT_X = 50;			                            // text w/in dialog box x-position
+        this.TEXT_Y = game.config.height  - 155;			    // text w/in dialog box y-position
+        this.TEXT_SIZE = 30;		                            // text font size (in pixels)
+        this.TEXT_MAX_WIDTH = game.config.width - 85;	        // max width of text within box
 
-        this.NEXT_TEXT = '[SPACE]';	// text to display for next prompt
-        this.NEXT_X = 775;			// next text prompt x-position
-        this.NEXT_Y = 574;			// next text prompt y-position
+        this.NEXT_TEXT = 'Press [SPACE] to continue';	// text to display for next prompt
+        this.NEXT_X = 1200;			// next text prompt x-position
+        this.NEXT_Y = 684;			// next text prompt y-position
 
         this.LETTER_TIMER = 10;		// # ms each letter takes to "type" onscreen
 
@@ -49,6 +49,7 @@ class Talking extends Phaser.Scene {
         // initialize dialog text objects (with no text)
         this.dialogText = this.add.bitmapText(this.TEXT_X, this.TEXT_Y, this.DBOX_FONT, '', this.TEXT_SIZE);
         this.nextText = this.add.bitmapText(this.NEXT_X, this.NEXT_Y, this.DBOX_FONT, '', this.TEXT_SIZE);
+        this.dialogText.setTint(0x67c43f);
 
         // ready the character dialog images offscreen
         this.homer = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'homer').setOrigin(0, 1);

@@ -32,13 +32,14 @@ class Title extends Phaser.Scene {
 
         // create input
         cursors = this.input.keyboard.createCursorKeys();
+        this.scene.start("talkingScene");
     }
 
     update() {
         // wait for player input
         if(Phaser.Input.Keyboard.JustDown(cursors.space)) {
             //this.scene.start("talkingScene");
-            this.scene.start("Machbeth");
+            this.scene.start("talkingScene");
         }
     }
 }
